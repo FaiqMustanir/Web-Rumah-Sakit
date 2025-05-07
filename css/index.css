@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --random: #55D6BE;
+    --1rem: 16px;
+    --1setengah: 24px;
+    --2rem: 32px;
+
+    --font-regular: 300;
+    --font-semibold: 900;
+    --font-bold: bold;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* navigation */
+header {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--black);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+        
+}
+
+.logo a {
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+
+}
+
+nav li {
+    margin-right: 30px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+nav a:hover {
+    color: var(--random);
+}
+
+/* navigation */
+
+/* hero section */
+.hero-section {
+    background-image: url("https://img.inews.co.id/media/822/files/inews_new/2022/09/22/Dokter.jpg");
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: #333;
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+    font-weight: var(--font-bold);
+}
+
+.hero-content p {
+    font-size: 1rem;
+    font-weight: 500;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-weight: var(--font-semibold);
+    color: #333;
+}
+
+.hero-content .btn {
+    background-color: rgb(8, 248, 68);
+    font-size: var(--1rem);
+    color: var(--black);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+    
+}
+
+.hero-content a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+.btn:hover {
+    background-color: green;
+}
+
+/* end hero section */
+
+/* doctors section */
+.doctors-section {
+    padding: var(--1setengah);
+    text-align: center;
+}
+
+.doctors h3 {
+    font-size: var(--1setengah);
+    font-weight: var(--font-semibold);
+}
+
+.doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--1rem);
+}
+
+.doctors-items {
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.doctors-items img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.doctors-items h1 {
+    font-size: var(--1rem);
+    font-weight: var(--font-semibold);
+    margin: 0 10px;
+    padding: 10px;
+}
+
+/* end doctors section */
+
+
+/* testimonial section */
+.testimonial-section {
+    padding: var(--1setengah);
+    text-align: center;
+}
+
+.testimonial h3 {
+    font-size: var(--1setengah);
+    font-weight: var(--font-semibold);
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--1rem);
+}
+
+.testimonial-items {
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.testimonial-items img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.testimonial-items h3 {
+    font-size: var(--1rem);
+    font-weight: var(--font-semibold);
+    margin: 0;
+    padding: 10px;
+}
+
+.testimonial-items p {
+    font-size: var(--1rem);
+    font-weight: var(--font-semibold);
+    margin: 0 10px;
+    padding: 10px;
+}
+
+/* end testimonial section */
+
+/* footer */
+footer {
+    background-color: #333;
+    color: var(--white);
+    padding: var(--2rem);
+}
+
+.footer-left h3 {
+    margin: 0;
+    font-weight: var(--font-semibold);
+}
+
+.footer-left p {
+    font-size: var(--1rem);
+}
+
+.footer-right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-grid h4 {
+    font-weight: var(--font-semibold);
+}
+
+.footer-grid ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-grid li {
+    margin-bottom: 5px;
+}
+
+.footer-grid a {
+    text-decoration: 0;
+    color: var(--white);
+}
+
+.footer-grid a:hover{
+    color: #000;
+}
+
+.footer-bottom{
+    text-align: center;
+}
+/* end footer */
+
+/* responsive */
+@media (max-width:768px){
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 1.6;
+        overflow-x: hidden;
+    }
+    
+    /* navigation */
+    header {
+        background-color: var(--white);
+        color: var(--black);
+        padding: 1rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--black);
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        height: 3%;
+            
+    }
+    
+    .logo a {
+        margin-left: 15px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        color: var(--white);
+    }
+    
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        font-size: 15px;
+    
+    }
+    
+    nav li {
+        margin-right: 30px;
+        
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: var(--white);
+    }
+    
+    nav a:hover {
+        color: var(--random);
+    }
+    
+    /* navigation */
+    
+    /* hero section */
+    .hero-section {
+        background-image: url("https://img.inews.co.id/media/822/files/inews_new/2022/09/22/Dokter.jpg");
+        background-size: cover;
+        height: 500px;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero-content {
+        text-align: center;
+        color: #333;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+        font-weight: var(--font-bold);
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+        font-weight: 500;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+        font-weight: var(--font-semibold);
+        color: #333;
+    }
+    
+    .hero-content .btn {
+        background-color: rgb(8, 248, 68);
+        font-size: var(--1rem);
+        color: var(--black);
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 5px;
+        
+    }
+    
+    .hero-content a{
+        text-decoration: none;
+        color: var(--black);
+    }
+    
+    .btn:hover {
+        background-color: green;
+    }
+    
+    /* end hero section */
+    
+    /* doctors section */
+    .doctors-section {
+        padding: var(--1setengah);
+        text-align: center;
+    }
+    
+    .doctors h3 {
+        font-size: var(--1setengah);
+        font-weight: var(--font-semibold);
+    }
+    
+    .doctors-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--1rem);
+    }
+    
+    .doctors-items {
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+    }
+    
+    .doctors-items img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .doctors-items h1 {
+        font-size: var(--1rem);
+        font-weight: var(--font-semibold);
+        margin: 0 10px;
+        padding: 10px;
+    }
+    
+    /* end doctors section */
+    
+    
+    /* testimonial section */
+    .testimonial-section {
+        padding: var(--1setengah);
+        text-align: center;
+    }
+    
+    .testimonial h3 {
+        font-size: var(--1setengah);
+        font-weight: var(--font-semibold);
+    }
+    
+    .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--1rem);
+    }
+    
+    .testimonial-items {
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+    }
+    
+    .testimonial-items img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .testimonial-items h3 {
+        font-size: var(--1rem);
+        font-weight: var(--font-semibold);
+        margin: 0;
+        padding: 10px;
+    }
+    
+    .testimonial-items p {
+        font-size: var(--1rem);
+        font-weight: var(--font-semibold);
+        margin: 0 10px;
+        padding: 10px;
+    }
+    
+    /* end testimonial section */
+    
+    /* footer */
+    footer {
+        background-color: #333;
+        color: var(--white);
+        padding: var(--2rem);
+    }
+    
+    .footer-left h3 {
+        margin: 0;
+        font-weight: var(--font-semibold);
+    }
+    
+    .footer-left p {
+        font-size: var(--1rem);
+    }
+    
+    .footer-right {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .footer-grid h4 {
+        font-weight: var(--font-semibold);
+    }
+    
+    .footer-grid ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .footer-grid li {
+        margin-bottom: 5px;
+    }
+    
+    .footer-grid a {
+        text-decoration: 0;
+        color: var(--white);
+    }
+    
+    .footer-grid a:hover{
+        color: #000;
+    }
+    
+    .footer-bottom{
+        text-align: center;
+    }
+}
+/* responsive */
